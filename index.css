@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --COR-PRINCIPAL: rgb(63, 79, 80);
+    --COR-SECUNDARIA: rgb(238, 193, 70);
+    --COR-SECUNDARIA-HOVER: rgb(247, 215, 127);
+}
+
+body {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: bisque;
+
+}
+
+body::after {
+    position: fixed;
+    transform: translateY(50px) translateX(-50vw) rotate(70deg);
+    z-index: -1;
+    content: "";
+    width: 150vh;
+    height: 60vw;
+    background-color: rgb(165, 159, 151);
+}
+
+
+body::before {
+    position: fixed;
+    transform: translateY(50px) translateX(60vw) rotate(110deg);
+    z-index: -2;
+    content: "";
+    width: 180vh;
+    height: 90vw;
+    background-color: rgb(112, 107, 99);
+}
+
+
+#header,
+#corpo {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.input {
+    display: flex;
+    flex-flow: column;
+}
+
+#main {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    min-width: 400px;
+    min-height: 350px;
+    border-radius: 30px;
+    background-color: var(--COR-PRINCIPAL);
+}
+
+#header {
+    background-color: var(--COR-SECUNDARIA);
+    border-radius: 30px 30px 0 0;
+    padding: 0px;
+    box-shadow: 0 5px 5px rgb(65, 65, 65);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: var(--COR-PRINCIPAL)
+}
+
+#corpo {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+#email,
+.senhas,
+#email_trocar_senha,
+#codigo {
+    padding-left: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--COR-SECUNDARIA);
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    color: white;
+}
+
+#email:-webkit-autofill,
+#email:-webkit-autofill:hover,
+#email:-webkit-autofill:focus,
+#email_trocar_senha:-webkit-autofill,
+#email_trocar_senha:-webkit-autofill:hover,
+#email_trocar_senha:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px var(--COR-PRINCIPAL) inset;
+    -webkit-text-fill-color: white;
+}
+
+.button,
+#senha_btn {
+    height: 40px;
+    width: 260px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--COR-SECUNDARIA);
+    color: var(--COR-PRINCIPAL);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button:hover,
+#senha_btn:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.button:active,
+.button:active {
+    animation: alternate;
+    animation: teste 0.2s alternate;
+}
+
+@keyframes teste {
+    0% {
+        transform: scale(105%);
+        background-color: var(--COR-SECUNDARIA-HOVER);
+    }
+
+    50% {
+        transform: scale(108%);
+    }
+
+    0% {
+        transform: scale(105%);
+    }
+}
+
+#footer {
+    width: 280px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#footer a {
+    color: white;
+}
+
+#alerta_senha {
+    display: flex;
+    align-self: center;
+    color: rgb(255, 87, 87);
+    font-size: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    #main {
+        gap: 30px;
+        min-width: 90vw;
+        min-height: 350px;
+        border-radius: 30px;
+        background-color: var(--COR-PRINCIPAL);
+    }
+}
+
+#visualizar_senha_btn {
+    display: flex;
+    align-self: center;
+    height: auto;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+#visualizar_senha_btn:hover,
+#visualizar_senha_btn:focus {
+    cursor: pointer;
+}
+
+#visualizar_senha_aberto,
+#visualizar_senha_fechado {
+    color: white;
+}
+
+#visualizar_senha_aberto:hover,
+#visualizar_senha_fechado:hover {
+    transform: scale(105%);
+}
+
+#visualizar_senha_aberto {
+    display: none;
+}

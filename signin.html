@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section id="main">
+        <header id="header">
+            <h1>Signin</h1>
+        </header>
+        <article id="corpo">
+            <div class="input email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email@teste.com">
+            </div>
+
+            <div class="input senha_container">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha_1" class="senhas" placeholder="Senha123">
+
+            </div>
+            <div class="input senha_container">
+                <label for="senha">repita sua senha</label>
+                <input type="password" id="senha_2" class="senhas" placeholder="Senha123">
+
+
+            </div>
+            <button id="visualizar_senha_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                    id="visualizar_senha_fechado"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                    <path fill="currentColor"
+                        d="m15.446 12.646l-.796-.796q.225-1.31-.742-2.267T11.65 8.85l-.796-.796q.252-.104.526-.156t.62-.052q1.529 0 2.591 1.063t1.063 2.591q0 .346-.052.64q-.052.293-.156.506m3.162 3.073l-.758-.669q.95-.725 1.688-1.588T20.8 11.5q-1.25-2.525-3.588-4.012T12 6q-.725 0-1.425.1T9.2 6.4l-.78-.78q.87-.33 1.772-.475T12 5q3.256 0 5.956 1.79q2.7 1.789 3.967 4.71q-.536 1.206-1.358 2.266t-1.957 1.953m1.115 5.42l-3.892-3.881q-.664.294-1.647.518Q13.2 18 12 18q-3.275 0-5.956-1.79q-2.68-1.789-3.967-4.71q.583-1.325 1.537-2.482q.953-1.157 2.036-1.941l-2.789-2.8l.708-.708l16.862 16.862zM6.358 7.785q-.86.611-1.758 1.607q-.898.997-1.4 2.108q1.25 2.525 3.587 4.013T12 17q.865 0 1.744-.168t1.322-.34l-1.632-1.642q-.236.133-.659.218t-.775.086q-1.529 0-2.591-1.063T8.346 11.5q0-.333.086-.746t.218-.688zm4.354 4.354" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                    id="visualizar_senha_aberto"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                    <path fill="currentColor"
+                        d="M12.005 15.154q1.524 0 2.586-1.067t1.063-2.591t-1.067-2.587t-2.591-1.063t-2.587 1.067t-1.063 2.592t1.067 2.586t2.592 1.063M12 14.2q-1.125 0-1.912-.787T9.3 11.5t.788-1.912T12 8.8t1.913.788t.787 1.912t-.787 1.913T12 14.2m0 3.8q-2.966 0-5.44-1.57t-3.996-4.114q-.125-.207-.178-.407t-.053-.41t.053-.41t.178-.405Q4.087 8.14 6.56 6.57T12 5t5.44 1.57t3.997 4.115q.125.205.178.405t.052.411t-.052.41t-.178.405q-1.523 2.545-3.997 4.115T12 18m0-1q2.825 0 5.188-1.487T20.8 11.5q-1.25-2.525-3.613-4.012T12 6T6.813 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17" />
+                </svg>
+            </button>
+            <p id="alerta_senha"></p>
+            <button id="signin" class="button">Signin</button>
+        </article>
+        <footer id="footer">
+            <a href="./index.html">ja tem uma conta ?</a>
+        </footer>
+    </section>
+    <script src="signin.js"></script>
+</body>
+
+</html>

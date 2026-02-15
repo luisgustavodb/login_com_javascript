@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section id="main">
+        <header id="header">
+            <h1>Mudar senha</h1>
+        </header>
+        <article id="corpo">
+            <div class="input email" id="email_trocar_senha_container">
+                <label for="email">Email</label>
+                <input type="email" id="email_trocar_senha" placeholder="Email@teste.com">
+                <p id="alerta_email"></p>
+            </div>
+
+            <div class="input codigo" id="codigo_container">
+                <label for="codigo">Codigo enviado por Email</label>
+                <input type="text" inputmode="numeric" id="codigo" placeholder="123-456" maxlength="7"
+                    pattern="[1-9]{3}-[1-9]{3}">
+                <br>
+            </div>
+
+            <button id="senha_btn" class="button">Signin</button>
+        </article>
+        <footer id="footer">
+            <a href="./index.html">ja tem uma conta ?</a>
+        </footer>
+    </section>
+    <script src="senha.js"></script>
+</body>
+
+</html>
