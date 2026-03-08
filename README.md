@@ -1,7 +1,3 @@
-# site
-
-login-com-javascript.vercel.app
-
 # Simple Login Page
 
 Uma página simples de **autenticação de usuário** desenvolvida para fins de aprendizado.  
